@@ -1,0 +1,144 @@
+body {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px; /* Adjust as needed for overall content width */
+}
+
+h1, h2, h3 {
+  color: #ccff00;
+  font-family: '256 Bytes', monospace;
+  text-align: center;
+  /* Enhanced glow for headers */
+  text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.terminal-window {
+  background-color: #0a0a0a;
+  padding: 1.5rem;
+  margin: 1.5rem auto; /* Reduced margin for closer grouping */
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5); /* Softened glow for subtlety */
+  max-width: 900px;
+  cursor: pointer; /* Indicate interactivity */
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.terminal-window:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.8); /* Enhanced glow on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.terminal-window code {
+  display: block;
+  background: none;
+  white-space: pre-wrap;
+  color: #ccff00;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
+  tab-size: 4; /* Ensure consistent tab spacing */
+  /* Added glow for terminal code text */
+  text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
+}
+
+/* General markdown content styling */
+.markdown-content {
+  background-color: #0a0a0a; /* Match terminal background */
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  max-width: 900px;
+}
+
+.markdown-content h2, .markdown-content h3 {
+  text-align: left; /* Align headings left within content blocks */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #ccff00; /* Subtle separator */
+  text-shadow: 0 0 10px #ccff00; /* Apply glow here as well */
+}
+
+.markdown-content p, .markdown-content ul, .markdown-content ol, .markdown-content pre, .markdown-content code {
+  color: #ffffff; /* Ensure body text is white */
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.markdown-content a {
+  color: #00ffff; /* A light blue for links, stands out but fits theme */
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content ul, .markdown-content ol {
+  list-style-type: none; /* Remove default bullet/number */
+  padding-left: 1.5rem;
+}
+
+.markdown-content ul li::before {
+  content: "❯"; /* Custom bullet point */
+  color: #ccff00;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  text-shadow: 0 0 5px #ccff00; /* Glow for custom bullet */
+}
+
+.markdown-content pre {
+  background-color: #1a1a1a; /* Slightly lighter black for code blocks */
+  padding: 1rem;
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+.markdown-content code {
+  color: #ccff00; /* Green for inline code */
+  background-color: #1a1a1a;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
+}
