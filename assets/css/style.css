@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: ##00CCCC;
+  background-color: #61a0bd;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
   margin: 0;
@@ -23,7 +23,7 @@ main {
 }
 
 h1 {
-  font-family: 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
+  font-family: 'Extrude',' monospace;
   font-size: 30px;
   color: #f0fff8;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
@@ -35,7 +35,7 @@ h1 {
   color: #f4ffe0;
   text-shadow:
     0 0 2px #00ff00,
-    0 0 6px #00ff00,
+    0 0 6px #00ff00,c
     1px 1px 2px #333333,
     2px 2px 4px #000000,
     -1px -1px 1px #444444;
@@ -80,11 +80,11 @@ p {
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+  
 
+  
 .terminal-window:hover {
-  border: 2px outset #303030;
+  border: 16px outset #303030;
 }
 
 .terminal-header {
@@ -97,7 +97,17 @@ p {
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
-  border-bottom: 1px solid #808080;
+  
+  border-bottom: 1px solid #808080
+  border-top: 2px solid #404049;      /* Shadow on top */
+  border-left: 2px solid #404049;     /* Shadow on left */
+  border-right: 2px solid #f7f6f5;    /* Highlight on right */
+  border-bottom: 2px solid #f7f6f5;   /* Highlight on bottom */
+
+  /* Optional: give it a slight inner inset feel */
+  box-shadow:
+    inset 1px 1px 0 #404049,   /* inner top-left shadow */
+    inset -1px -1px 0 #f7f6f5;
 }
 
 .terminal-buttons {
