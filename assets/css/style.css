@@ -30,7 +30,7 @@ h1 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-
+/*
 .glow-text {
   color: #f4ffe0;
   text-shadow:
@@ -41,7 +41,7 @@ h1 {
     -1px -1px 1px #444444;
   margin-bottom: 1.5rem;
 }
-
+*/
 h2 {
   font-family: 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
   color: #f0fff8;
