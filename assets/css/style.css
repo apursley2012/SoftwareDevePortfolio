@@ -67,8 +67,24 @@ p {
 .terminal-window:hover {
     border: 2px outset #d0d0d0;
 }
-
 .terminal-header {
+    background: linear-gradient(to right, #707070, #e8e8e8, #f5f5f5);
+    color: #000000;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    border-top: 2px solid #ffffff;     /* top highlight */
+    border-left: 2px solid #ffffff;    /* left highlight */
+    border-right: 2px solid #404040;   /* right shadow */
+    border-bottom: 2px solid #404040;  /* bottom shadow */
+    box-shadow:
+        inset -1px -1px 0 #ffffff,     /* inner top-left light */
+        inset 1px 1px 0 #808080;       /* inner bottom-right shadow */
+}
     background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
     color: #000000;
     padding: 0.25rem 0.5rem;
@@ -115,15 +131,15 @@ p {
 }
 
 .terminal-button.minimize::before {
-    content: "&#95;";
+    content: "-";
 }
 
 .terminal-button.maximize::before {
-    content: "&#9634";
+    content: "므";
 }
 
 .terminal-button.close::before {
-    content: "×";
+    content: "X";
 }
 
 .terminal-content {
