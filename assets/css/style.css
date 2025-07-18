@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #2a2a2a;
+  background-color: ##00CCCC;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
   margin: 0;
@@ -23,7 +23,7 @@ main {
 }
 
 h1 {
-  font-family: 'Extrude','Tourney','Static','SixtyFour', Audiowide','Press Start 2P', monospace;
+  font-family: 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
   font-size: 30px;
   color: #f0fff8;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
@@ -43,6 +43,11 @@ h1 {
 }
 
 h2 {
+  font-family: 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
+  color: #f0fff8;
+  text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
+  text-align: center;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.3;
 }
