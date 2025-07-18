@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
 <body>
     <main>
         {{ content }}
@@ -24,3 +25,89 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <style>
+    body {
+      visibility: hidden; /* Hide content until typing starts */
+    }
+
+    .terminal-window,
+    .markdown-content,
+    .terminal-header,
+    .status-bar {
+      visibility: hidden;
+    }
+  </style>
+
+  <script>
+    function openPage(pageName) {
+            // Navigate to the specified page
+            window.location.href = pageName + '.html';
+        }
+    document.addEventListener("DOMContentLoaded", () => {
+      const elementsToType = document.querySelectorAll(".type-sequence");
+      const delay = 30; // milliseconds per character
+      let globalIndex = 0;
+
+      function typeElement(el, callback) {
+        const text = el.dataset.text;
+        el.textContent = "";
+        let i = 0;
+        const interval = setInterval(() => {
+          if (i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+          } else {
+            clearInterval(interval);
+            if (callback) callback();
+          }
+        }, delay);
+      }
+
+      function revealAndType(index) {
+        if (index >= elementsToType.length) return;
+        const el = elementsToType[index];
+        el.style.visibility = "visible";
+        typeElement(el, () => {
+          revealAndType(index + 1);
+        });
+      }
+
+      // Start typing after small delay
+      setTimeout(() => {
+        document.body.style.visibility = "visible";
+
+        document.querySelectorAll(".terminal-window, .markdown-content, .terminal-header, .status-bar")
+          .forEach(el => el.style.visibility = "visible");
+
+        revealAndType(0);
+      }, 500);
+    });
+  </script>
+</head>
+
+<body>
+  <main>
+        {{ content }}
+  </main>
+</body>
+</html>
