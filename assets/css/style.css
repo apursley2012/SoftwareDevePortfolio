@@ -64,8 +64,8 @@ p {
 }
 
 .terminal-header {
-    background: linear-gradient(180deg, #000080 0%, #000060 100%);
-    color: white;
+    background: linear-gradient(to right, #696969, #D3D3D3);
+    color: grey;
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
     display: flex;
