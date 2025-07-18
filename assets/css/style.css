@@ -58,22 +58,6 @@ p {
     cursor: pointer;
     font-family: 'Share Tech Mono', monospace;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.terminal-window:hover {
-    border: 2px outset #d0d0d0;
-}
-
-.terminal-header {
-    background: linear-gradient(to right, #808080, #d3d3d3);
-    color: #c0c0c0;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
     /* top highlight */
     border-top: 2px solid #808080;     
     /* left highlight */
@@ -92,6 +76,66 @@ p {
         /* Bottom-right shadow */
         inset -1px 1px 0 #c0c0c0;
 }
+}
+
+.terminal-window:hover {
+    border: 2px outset #d0d0d0;
+}
+
+.terminal-header {
+    background: linear-gradient(to right, #808080, #d3d3d3);
+    color: #000000;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    /* Outer bevel: gives a raised border look */
+    /* Top highlight */
+    border-top: 2px solid #ffffff;     
+    /* Left highlight */
+    border-left: 2px solid #ffffff;    
+     /* Bottom shadow */
+    border-bottom: 2px solid #404040; 
+    /* Right shadow */
+    border-right: 2px solid #404040;   
+    
+    /* Inner bevel: makes inside edges look sunken */
+    box-shadow:
+        /* Inner top-left highlight */
+        inset -2px -2px 0 #ffffff,   
+        /* Inner bottom-right shadow */
+        inset 2px 2px 0 #808080,         
+
+    /* Outer drop shadow: adds depth around the whole window */
+    4px 4px 8px rgba(0, 0, 0, 0.5);  
+    
+    /* top highlight */
+    /* 
+    border-top: 2px solid #ffffff;     
+    /* left highlight */
+    /*
+    border-left: 2px solid #808080;    
+    /* right shadow */
+    /*
+    border-right: 2px solid #808080;   
+    /* bottom shadow */
+    /*
+    border-bottom: 2px solid #808080;  
+    box-shadow:
+        /* Top-left highlight */
+        /*    
+        inset -1px -1px 0 #c0c0c0,   
+        /* Bottom-right shadow 
+        inset 1px 1px 0 #808080,     
+        /* Top-right shadow 
+        inset 1px -1px 0 #808080,    
+        /* Bottom-right shadow 
+        inset -1px 1px 0 #c0c0c0;
+        
+}*/
 /*
     background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
     color: #000000;
@@ -161,22 +205,76 @@ p {
     border: 1px inset #c0c0c0;
 }
 
-/* Add this BELOW your existing .terminal-button.close styles */
-.terminal-button.close {
-  position: relative; /* Needed so the ::before/::after are positioned correctly */
+.terminal-button {
+  width: 16px;
+  height: 14px;
+  border: 1px outset #c0c0c0;
+  background-color: #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  margin-right: 0;
+  position: relative;
 }
 
-.terminal-button.close::before,
-.terminal-button.close::after {
+.terminal-button.maximize {
+  margin-right: 4px; /* gap between maximize and close */
+}
+
+/* ALL BUTTON ICONS: shared line styling */
+.terminal-button::before,
+.terminal-button::after {
   content: "";
+  display: block;
   position: absolute;
+  background: #000;
+  border-radius: 1px;
+}
+
+/* MINIMIZE: single horizontal bar */
+.terminal-button.minimize::before {
+  width: 10px;
+  height: 2px;
   top: 50%;
   left: 50%;
-  width: 10px;                 /* Width of the lines */
-  height: 2px;                 /* Thickness of the lines */
-  background: #000;            /* Line color */
-  border-radius: 1px;
-  transform-origin: center;
+  transform: translate(-50%, -50%);
+}
+
+.terminal-button.minimize::after {
+  display: none;
+}
+
+/* MAXIMIZE: hollow square */
+.terminal-button.maximize::before {
+  width: 10px;
+  height: 8px;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #000;
+  background: transparent;
+  content: "";
+}
+
+.terminal-button.maximize::after {
+  display: none;
+}
+
+/* CLOSE: draw "X" using two lines */
+.terminal-button.close::before {
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.terminal-button.close::after {
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .terminal-button.close::before {
