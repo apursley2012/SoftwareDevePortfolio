@@ -13,9 +13,10 @@ This is my Software Development ePortfolio site. Here you will find the projects
     <div class="terminal-header">
         <span>Code Review</span>
         <div class="terminal-buttons">
-            <div class="terminal-button minimize"></div>
-            <div class="terminal-button maximize"></div>
-            <div class="terminal-button close"></div>
+            <div class="terminal-button minimize"><a href="#" class="min-icon"></a></div>
+            <div class="terminal-button maximize"><a href="#" class="max-icon"></a></div>
+            <div class="terminal-button close"><a href="#" class="x-icon"></a></div>
+</div>
         </div>
     </div>
     <div class="terminal-content">
