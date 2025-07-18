@@ -1,582 +1,244 @@
-
+@font-face {
+  font-family: 'Extrude';
+  src: url('/assets/fonts/Extrude.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    font-family: 'Share Tech Mono', monospace;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-}
- 
-main {
-    width: 100%;
-    max-width: 1000px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-@font-face {
-        font-family: 'Extrude';
-        src: url('/assets/fonts/Extrude.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
+main {
+  width: 100%;
+  max-width: 1000px;
+}
 
 h1 {
-    color: #f0fff8;
-    font-family: 'Extrude', monospace;
-    font-size: 30px;
-    color: #f0fff8; /* almost white */
-        text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
-    text-align: center;
-    /*text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;*/
-    .glow-text {
-        color: #f4ffe0; /* Almost white with a very subtle yellow-green tint */
-        text-shadow:
-            0 0 2px #00ff00,     /* soft green glow close to text */
-            0 0 6px #00ff00,     /* outer green glow */
-            1px 1px 2px #333333, /* subtle dark gray offset */
-            2px 2px 4px #000000, /* deeper black shadow for depth */
-            -1px -1px 1px #444444; /* top-left soft edge shadow for lift */
-        margin-bottom: 1.5rem;
-    }
+  font-family: 'Extrude', monospace;
+  font-size: 30px;
+  color: #f0fff8;
+  text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
+.glow-text {
+  color: #f4ffe0;
+  text-shadow:
+    0 0 2px #00ff00,
+    0 0 6px #00ff00,
+    1px 1px 2px #333333,
+    2px 2px 4px #000000,
+    -1px -1px 1px #444444;
+  margin-bottom: 1.5rem;
+}
 
 h2 {
-    font-size: 1.5rem;
-    line-height: 1.3;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 h3 {
-    font-size: 1rem;
-    line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .intro-text {
-    font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
 
-/* Windows 2000 Terminal Window Styling */
+/* Terminal Window */
 .terminal-window {
-    background-color: #d4d0c8;
-    padding: 0;
-    margin: 1.5rem auto;
-    border: 2px outset #c0c0c0;
-    max-width: 900px;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #d4d0c8;
+  padding: 0;
+  margin: 1.5rem auto;
+  border: 2px outset #c0c0c0;
+  max-width: 900px;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-.raised-element {
-        margin-top: -4px; /* Raise it 20px above its normal spot */
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
-        transition: all 0.3s ease-in-out; /* Smooth transition *//*
-    }
 
 .terminal-window:hover {
-    border: 2px outset #303030;
+  border: 2px outset #303030;
+}
 
 .terminal-header {
-    background: linear-gradient(to right, #808080, #909090, a0a0a0, b0b0b0, c0c0c0);
-    color: #000000;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    border-bottom: 1px solid #808080;
-}
-
-/* Windows 2000 Terminal Window Styling 
-.terminal-window {
-    background-color: #d4d0c8;
-    padding: 0;
-    margin: 2rem auto;
-    border: 2px solid c0c0c0;
-    border-top-color: #ffffff;
-    border-left-color: #ffffff;
-    border-bottom-color: #404040;
-    border-right-color: #404040;
-     /* Increased outer box shadow (main raise) 
-    box-shadow:
-    1.5px 1.5px 6px rgba(0, 0, 0, 0.5),   
-    0 0 10px rgba(0, 0, 0, 0.3);       /* soft glow around window 
-}*/
-}
-/*
-.terminal-header {
-    background: linear-gradient(to right, #808080, #909090, a0a0a0, b0b0b0, c0c0c0);
-    color: #000000;
-    padding: 0.5rem 0.5rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    /* Outer border to simulate inset frame 
-    border-top: 2px solid #fcfcfb;
-    border-left: 2px solid #fcfcfb;
-    border-right: 2px solid #404040;
-    border-bottom: 2px solid #404040;
-    /* Inset effect inside the title bar 
-    box-shadow:
-        /* inner bottom-right shadow 
-        inset 1px 1px 1px #404040, 
-        /* inner top-left highlight 
-        inset -1px -1px 1px #fcfcfb;   
-        /* Top-right shadow 
-        inset 1px -1px 0 ##404040, 
-        /* Bottom-left shadow 
-        inset 1px 1px 0 #
-    
-   
-/*
-
-
-    background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
-    color: #000000;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    border-bottom: 1px solid #808080;
-    .raised-element {
-        margin-top: -4px; /* Raise it 20px above its normal spot */
-        /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
-      /*  transition: all 0.3s ease-in-out; /* Smooth transition *//*
-    }
-}
-*/
-
-/* Third Update to Buttons */
-.terminal-buttons {
-    display: flex;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    border: 1px outset #959796;
-    background-color: #D3CFC7;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    box-shadow: 2px 2px 1px #404040; /* down and right shadow */
-    margin-right: 0; /* default spacing is none */
-}
-
-/* Add specific gap ONLY between maximize and close */
-.terminal-button.maximize {
-    margin-right: 4px; /* creates a 2–4px gap before the close button */
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+  color: #000000;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  border-bottom: 1px solid #808080;
 }
 
 .terminal-buttons {
-    display: flex;
-    gap: 0.25rem;
+  display: flex;
+  gap: 0.25rem;
 }
-
-.terminal-button {
-    width: 16px;
-    height: 14px;
-    border: 1px outset #c0c0c0;
-    background-color: #c0c0c0;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-}
-
-.terminal-button:active {
-    border: 1px inset #c0c0c0;
-}
-
-
-
-.terminal-button i {
-    /* Adjust to fit the button size */
-    font-size: 10px;
-    /* Or any color you prefer */      
-    color: black;            
-    line-height: 1;
-    /* vertical centering */
-    align-items: center; 
-    /* horizontal centering */
-    justify-content: center;  
-
-}
-
-
-/*
 
 .terminal-button {
   width: 16px;
   height: 14px;
   border: 1px outset #c0c0c0;
   background-color: #c0c0c0;
+  font-size: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-  margin-right: 0;
-  position: relative;
-}
-
-.terminal-button.maximize {
-  margin-right: 4px; /* gap between maximize and close 
-}
-
-/* ALL BUTTON ICONS: shared line styling 
-.terminal-button::before,
-.terminal-button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #000;
-  border-radius: 1px;
-}
-
-/* MINIMIZE: single horizontal bar 
-.terminal-button.minimize::before {
-  width: 10px;
-  height: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.terminal-button.minimize::after {
-  display: none;
-}
-
-/* MAXIMIZE: hollow square 
-.terminal-button.maximize::before {
-  width: 10px;
-  height: 8px;
-  top: 2px;
-  left: 2px;
-  border: 2px solid #000;
-  background: transparent;
-  content: "";
-}
-
-.terminal-button.maximize::after {
-  display: none;
-}
-
-/* CLOSE: draw "X" using two lines 
-.terminal-button.close::before {
-  width: 10px;
-  height: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.terminal-button.close::after {
-  width: 10px;
-  height: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.terminal-button.close::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.terminal-button.close::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-/*
-.terminal-button.minimize::before {
-    content: "-";
-}
-
-.terminal-button.maximize::before {
-    content: "므";
-}
-
-.terminal-button.close::before {
-    content: "X";
-}
-*/
-.terminal-content {
-    background-color: #000000;
-    color: #00ff00;
-    padding: 1rem;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    min-height: 150px;
-}
-
-.terminal-content code {
-    display: block;
-    background: none;
-    white-space: pre-wrap;
-    color: #00ff00;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    tab-size: 4;
-}
-
-.clickable-link {
-    color: #00ffff;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.clickable-link:hover {
-    color: #ffff00;
-}
-
-.status-bar {
-    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
-    padding: 0.25rem 0.5rem;
-    color: #000000;
-    font-size: 0.7rem;
-    text-align: left;
-    border-top: 1px solid #808080;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-/* Second Update to Buttons
-
-.terminal-buttons {
-    display: flex;
-    gap: 0.25rem;
-}
-
-.terminal-button {
-  width: 18px;
-  height: 16px;
-  background-color: #c0c0c0;
-  border: 2px solid #fff;
-  border-right-color: #808080;
-  border-bottom-color: #808080;
-  font-size: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
-  color: #000;
-  box-shadow: 2px 2px 0 #808080; /* Shadow to bottom right */
-/*
-margin-right: 2px; /* Slight space between each */
-  /* padding-bottom: 1px;
-}
-*/
-
-/* Touching minimize and maximize */
-/*
-.terminal-button.minimize {
-  margin-right: 0;
-}
-
-/* Slight gap before the close button */
-/* 
-.terminal-button.maximize {
-  margin-right: 6px;
-}
-/*
-.terminal-button.close {
-  background-color: #c0c0c0;
-  border: 2px solid #fff;
-  border-right-color: #808080;
-  border-bottom-color: #808080;
-  color: #000;
-  box-shadow: 2px 2px 0 #808080;
-}
-
-1st Updated Buttons 
-
-/*
-.terminal-button {
-    width: 16px;
-    height: 14px;
-    border: 1px outset #c0c0c0;
-    background-color: #c0c0c0;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
-    .raised-element {
-        margin-top: -20px; /* Raise it 20px above its normal spot */
-        /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
-        /*transition: all 0.3s ease-in-out; /* Smooth transition 
-    }
-}
-
-.terminal-buttons {
-    display: flex;
-    gap: 0.25rem;
-}
-
-.terminal-button {
-    width: 16px;
-    height: 14px;
-    border: 1px outset #c0c0c0;
-    background-color: #c0c0c0;
-    font-size: 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bold;
 }
 
 .terminal-button:active {
-    border: 1px inset #c0c0c0;
+  border: 1px inset #c0c0c0;
 }
 
-.terminal-button.minimize::before {
-    content: "_";
+.terminal-button.maximize {
+  margin-right: 4px;
 }
 
-.terminal-button.maximize::before {
-    content: "□";
-}
-
-.terminal-button.close::before {
-    content: "×";
+.terminal-button i {
+  font-size: 10px;
+  color: black;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .terminal-content {
-    background-color: #000000;
-    color: #00ff00;
-    padding: 1rem;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    min-height: 150px;
+  background-color: #000000;
+  color: #00ff00;
+  padding: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  min-height: 150px;
 }
 
 .terminal-content code {
-    display: block;
-    background: none;
-    white-space: pre-wrap;
-    color: #00ff00;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    tab-size: 4;
+  display: block;
+  background: none;
+  white-space: pre-wrap;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  tab-size: 4;
 }
 
 .clickable-link {
-    color: #00ffff;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.2s ease;
+  color: #00ffff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .clickable-link:hover {
-    color: #ffff00;
+  color: #ffff00;
 }
 
 .status-bar {
-    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
-    padding: 0.25rem 0.5rem;
-    color: #000000;
-    font-size: 0.7rem;
-    text-align: left;
-    border-top: 1px solid #808080;
-    font-family: 'Share Tech Mono', monospace;
+  background: linear-gradient(to right, #c0c0c0, #e0e0e0);
+  padding: 0.25rem 0.5rem;
+  color: #000000;
+  font-size: 0.7rem;
+  text-align: left;
+  border-top: 1px solid #808080;
+  font-family: 'Share Tech Mono', monospace;
 }
 
-/* General markdown content styling */
 .markdown-content {
-    background-color: #0a0a0a;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
-    max-width: 900px;
+  background-color: #0a0a0a;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  max-width: 900px;
 }
 
 .markdown-content h2, .markdown-content h3 {
-    text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px dashed #ccff00;
-    text-shadow: 0 0 10px #ccff00;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 1rem;
-    line-height: 1.4;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #ccff00;
+  text-shadow: 0 0 10px #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.markdown-content p, .markdown-content ul, .markdown-content ol, .markdown-content pre, .markdown-content code {
-    color: #ffffff;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
-    line-height: 1.6;
+.markdown-content p,
+.markdown-content ul,
+.markdown-content ol,
+.markdown-content pre,
+.markdown-content code {
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .markdown-content a {
-    color: #00ffff;
-    text-decoration: none;
+  color: #00ffff;
+  text-decoration: none;
 }
 
 .markdown-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.markdown-content ul, .markdown-content ol {
-    list-style-type: none;
-    padding-left: 1.5rem;
+.markdown-content ul,
+.markdown-content ol {
+  list-style-type: none;
+  padding-left: 1.5rem;
 }
 
 .markdown-content ul li::before {
-    content: "❯";
-    color: #ccff00;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    text-shadow: 0 0 5px #ccff00;
+  content: "❯";
+  color: #ccff00;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  text-shadow: 0 0 5px #ccff00;
 }
 
 .markdown-content pre {
-    background-color: #1a1a1a;
-    padding: 1rem;
-    border-radius: 3px;
-    overflow-x: auto;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 3px;
+  overflow-x: auto;
 }
 
 .markdown-content code {
-    color: #ccff00;
-    background-color: #1a1a1a;
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-    text-shadow: 0 0 5px #ccff00;
+  color: #ccff00;
+  background-color: #1a1a1a;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  text-shadow: 0 0 5px #ccff00;
 }
