@@ -17,7 +17,7 @@ main {
 
 h1 {
     color: #ccff00;
-    font-family: 'Extrude',  ;
+    font-family: 'Extrude', monospace;
     text-align: center;
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
     margin-bottom: 1.5rem;
@@ -33,7 +33,7 @@ h3 {
     font-size: 1rem;
     line-height: 1.4;
 }
-=
+
 p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -63,6 +63,7 @@ p {
 .terminal-window:hover {
     border: 2px outset #d0d0d0;
 }
+
 .terminal-header {
     background: linear-gradient(to right, #808080, #d3d3d3);
     color: #c0c0c0;
