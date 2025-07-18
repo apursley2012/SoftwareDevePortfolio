@@ -79,6 +79,11 @@ p {
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
     border-bottom: 1px solid #808080;
+    .raised-element {
+        margin-top: -4px; /* Raise it 20px above its normal spot */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
+        transition: all 0.3s ease-in-out; /* Smooth transition */
+    }
 }
 
 .terminal-buttons {
@@ -98,6 +103,11 @@ p {
     cursor: pointer;
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
+    .raised-element {
+        margin-top: -20px; /* Raise it 20px above its normal spot */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
+        transition: all 0.3s ease-in-out; /* Smooth transition */
+    }
 }
 
 .terminal-button:active {
