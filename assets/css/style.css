@@ -83,10 +83,14 @@ p {
     /* bottom shadow */
     border-bottom: 2px solid #808080;  
     box-shadow:
-        /* inner top-left light */
-        inset -1px -1px 0 #808080,   
-         /* inner bottom-right shadow */
-        inset 1px 1px 0 #c0c0c0;      
+        /* Top-left highlight */
+        inset -1px -1px 0 #c0c0c0,   
+        /* Bottom-right shadow */
+        inset 1px 1px 0 #808089,     
+        /* Top-right shadow */
+        inset 1px -1px 0 #808080,    
+        /* Bottom-right shadow */
+        inset -1px 1px 0 #c0c0c0;
 }
 /*
     background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
@@ -157,6 +161,32 @@ p {
     border: 1px inset #c0c0c0;
 }
 
+/* Add this BELOW your existing .terminal-button.close styles */
+.terminal-button.close {
+  position: relative; /* Needed so the ::before/::after are positioned correctly */
+}
+
+.terminal-button.close::before,
+.terminal-button.close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;                 /* Width of the lines */
+  height: 2px;                 /* Thickness of the lines */
+  background: #000;            /* Line color */
+  border-radius: 1px;
+  transform-origin: center;
+}
+
+.terminal-button.close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.terminal-button.close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*
 .terminal-button.minimize::before {
     content: "-";
 }
@@ -168,7 +198,7 @@ p {
 .terminal-button.close::before {
     content: "X";
 }
-
+*/
 .terminal-content {
     background-color: #000000;
     color: #00ff00;
