@@ -23,7 +23,7 @@ main {
 }
 
 h1 {
-  font-family: 'Rubik Glitch',variable;
+  font-family: 'Rubik Glitch', 'Press Start 2P', 'Silkscreen', static;
   font-size: 30px;
   color: #2bd852;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
