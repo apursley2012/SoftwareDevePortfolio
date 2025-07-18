@@ -16,10 +16,13 @@ main {
 }
 
 h1 {
-    color: #ccff00;
+    color: #f0fff8;
     font-family: 'Atomic Age', monospace;
+    font-size: 30px;
+    color: #f0fff8; /* almost white */
+        text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
     text-align: center;
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
+    /*text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;*/
     margin-bottom: 1.5rem;
 }
 
