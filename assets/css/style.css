@@ -96,7 +96,7 @@ p {
     /* Top highlight */
     border-top: 2px solid #ffffff;     
     /* Left highlight */
-    border-left: 2px solid #ffffff;    
+    border-left: 2px solid #808080;    
      /* Bottom shadow */
     border-bottom: 2px solid #404040; 
     /* Right shadow */
@@ -205,6 +205,14 @@ p {
     border: 1px inset #c0c0c0;
 }
 
+.terminal-button i {
+  font-size: 10px;         /* Adjust to fit the button size */
+  color: black;            /* Or any color you prefer */
+  line-height: 1;
+}
+
+/*
+
 .terminal-button {
   width: 16px;
   height: 14px;
@@ -219,10 +227,10 @@ p {
 }
 
 .terminal-button.maximize {
-  margin-right: 4px; /* gap between maximize and close */
+  margin-right: 4px; /* gap between maximize and close 
 }
 
-/* ALL BUTTON ICONS: shared line styling */
+/* ALL BUTTON ICONS: shared line styling 
 .terminal-button::before,
 .terminal-button::after {
   content: "";
@@ -232,7 +240,7 @@ p {
   border-radius: 1px;
 }
 
-/* MINIMIZE: single horizontal bar */
+/* MINIMIZE: single horizontal bar 
 .terminal-button.minimize::before {
   width: 10px;
   height: 2px;
@@ -245,7 +253,7 @@ p {
   display: none;
 }
 
-/* MAXIMIZE: hollow square */
+/* MAXIMIZE: hollow square 
 .terminal-button.maximize::before {
   width: 10px;
   height: 8px;
@@ -260,7 +268,7 @@ p {
   display: none;
 }
 
-/* CLOSE: draw "X" using two lines */
+/* CLOSE: draw "X" using two lines 
 .terminal-button.close::before {
   width: 10px;
   height: 2px;
