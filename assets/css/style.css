@@ -53,40 +53,26 @@ p {
 
 /* Windows 2000 Terminal Window Styling */
 .terminal-window {
-    background-color: #c0c0c0;
+    background-color: #000000;
     padding: 0;
-    margin: 1.5rem auto;
-    border: 2px outset #c0c0c0;
-    max-width: 900px;
-    cursor: pointer;
-    font-family: 'Share Tech Mono', monospace;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* top highlight */
-    border-top: 2px solid #808080;     
-    /* left highlight */
-    border-left: 2px solid #808080;    
-    /* right shadow */
-    border-right: 2px solid #808080;   
-    /* bottom shadow */
-    border-bottom: 2px solid #808080;  
+    margin: 2rem auto;
+    border: 2px solid c0c0c0;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #404040;
+    border-right-color: #404040;
+     /* Increased outer box shadow (main raise) */
     box-shadow:
-        /* Top-left highlight */
-        inset -1px -1px 0 #c0c0c0,   
-        /* Bottom-right shadow */
-        inset 1px 1px 0 #808089,     
-        /* Top-right shadow */
-        inset 1px -1px 0 #808080,    
-        /* Bottom-right shadow */
-        inset -1px 1px 0 #c0c0c0;
-}
+    6px 6px 12px rgba(0, 0, 0, 0.5),   /* deep drop shadow */
+    0 0 10px rgba(0, 0, 0, 0.3);       /* soft glow around window */
 }
 
 .terminal-window:hover {
-    border: 2px outset #d0d0d0;
+    border: 2px outset #d4d0c8;
 }
 
 .terminal-header {
-    background: linear-gradient(to right, #808080, #d3d3d3);
+    background: linear-gradient(to right, #808080, #909090, a0a0a0, b0b0b0, c0c0c0);
     color: #000000;
     padding: 0.5rem 0.5rem;
     font-size: 0.8rem;
@@ -95,50 +81,23 @@ p {
     align-items: center;
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
-    /* Outer bevel: gives a raised border look */
-    /* Top highlight */
-    border-top: 2px solid #ffffff;     
-    /* Left highlight */
-    border-left: 2px solid #808080;    
-     /* Bottom shadow */
-    border-bottom: 2px solid #404040; 
-    /* Right shadow */
-    border-right: 2px solid #404040;   
-    
-    /* Inner bevel: makes inside edges look sunken */
+    /* Outer border to simulate inset frame */
+    border-top: 2px solid #fcfcfb;
+    border-left: 2px solid #fcfcfb;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    /* Inset effect inside the title bar */
     box-shadow:
-        /* Inner top-left highlight */
-        inset -2px -2px 0 #ffffff,   
-        /* Inner bottom-right shadow */
-        inset 2px 2px 0 #808080,         
-
-    /* Outer drop shadow: adds depth around the whole window */
-    4px 4px 8px rgba(0, 0, 0, 0.5);  
+        /* inner bottom-right shadow */
+        inset 1px 1px 1px #404040, 
+        /* inner top-left highlight */
+        inset -1px -1px 1px #fcfcfb;   
+        /* Top-right shadow */
+        inset 1px -1px 0 ##404040, 
+        /* Bottom-left shadow */
+        inset 1px 1px 0 #
     
-    /* top highlight */
-    /* 
-    border-top: 2px solid #ffffff;     
-    /* left highlight */
-    /*
-    border-left: 2px solid #808080;    
-    /* right shadow */
-    /*
-    border-right: 2px solid #808080;   
-    /* bottom shadow */
-    /*
-    border-bottom: 2px solid #808080;  
-    box-shadow:
-        /* Top-left highlight */
-        /*    
-        inset -1px -1px 0 #c0c0c0,   
-        /* Bottom-right shadow 
-        inset 1px 1px 0 #808080,     
-        /* Top-right shadow 
-        inset 1px -1px 0 #808080,    
-        /* Bottom-right shadow 
-        inset -1px 1px 0 #c0c0c0;
-        
-}*/
+   
 /*
     background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
     color: #000000;
