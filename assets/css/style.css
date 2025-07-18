@@ -75,18 +75,18 @@ p {
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
     /* top highlight */
-    border-top: 2px solid #ffffff;     
+    border-top: 2px solid #808080;     
     /* left highlight */
-    border-left: 2px solid #ffffff;    
+    border-left: 2px solid #808080;    
     /* right shadow */
-    border-right: 2px solid #404040;   
+    border-right: 2px solid #808080;   
     /* bottom shadow */
-    border-bottom: 2px solid #404040;  
+    border-bottom: 2px solid #808080;  
     box-shadow:
         /* inner top-left light */
-        inset -1px -1px 0 #ffffff,   
+        inset -1px -1px 0 #808080,   
          /* inner bottom-right shadow */
-        inset 1px 1px 0 #808080;      
+        inset 1px 1px 0 #c0c0c0;      
 }
 /*
     background-image: linear-gradient(to right, #707070 30%, #e8e8e8 70%, #f5f5f5 100%);
@@ -134,10 +134,81 @@ p {
     margin-right: 4px; /* creates a 2–4px gap before the close button */
 }
 
-/* Optional: pressed effect */
+.terminal-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.terminal-button {
+    width: 16px;
+    height: 14px;
+    border: 1px outset #c0c0c0;
+    background-color: #c0c0c0;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+}
+
 .terminal-button:active {
-    border: 1px inset #a0a0a0;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px inset #c0c0c0;
+}
+
+.terminal-button.minimize::before {
+    content: "-";
+}
+
+.terminal-button.maximize::before {
+    content: "므";
+}
+
+.terminal-button.close::before {
+    content: "X";
+}
+
+.terminal-content {
+    background-color: #000000;
+    color: #00ff00;
+    padding: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    min-height: 150px;
+}
+
+.terminal-content code {
+    display: block;
+    background: none;
+    white-space: pre-wrap;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    tab-size: 4;
+}
+
+.clickable-link {
+    color: #00ffff;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.clickable-link:hover {
+    color: #ffff00;
+}
+
+.status-bar {
+    background: linear-gradient(to right, #c0c0c0, #e0e0e0);
+    padding: 0.25rem 0.5rem;
+    color: #000000;
+    font-size: 0.7rem;
+    text-align: left;
+    border-top: 1px solid #808080;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 /* Second Update to Buttons
@@ -210,21 +281,40 @@ margin-right: 2px; /* Slight space between each */
         /*transition: all 0.3s ease-in-out; /* Smooth transition 
     }
 }
-*/
+
+.terminal-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.terminal-button {
+    width: 16px;
+    height: 14px;
+    border: 1px outset #c0c0c0;
+    background-color: #c0c0c0;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+}
+
 .terminal-button:active {
-    border: 10px outset #c0c0c0;
+    border: 1px inset #c0c0c0;
 }
 
 .terminal-button.minimize::before {
-    content: "-";
+    content: "_";
 }
 
 .terminal-button.maximize::before {
-    content: "므";
+    content: "□";
 }
 
 .terminal-button.close::before {
-    content: "X";
+    content: "×";
 }
 
 .terminal-content {
