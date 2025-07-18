@@ -23,7 +23,7 @@ main {
 }
 
 h1 {
-  font-family: 'Extrude',monospace;
+  font-family: 'Static',monospace;
   font-size: 30px;
   color: #f0fff8;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
@@ -36,7 +36,7 @@ h1 {
   text-shadow:
     0 0 2px #00ff00,
     0 0 6px #00ff00,c
-    1px 1px 2px #333333,
+    1.5px 1.5px 3px #333333,
     2px 2px 4px #000000,
     -1px -1px 1px #444444;
   margin-bottom: 1.5rem;
@@ -55,18 +55,20 @@ h2 {
 h3 {
   font-size: 1rem;
   line-height: 1.4;
+  text-align: left;
 }
 
 p {
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: left;
   margin-bottom: 1rem;
 }
 
 .intro-text {
   font-family: 'Share Tech Mono', monospace;
   color: #ffffff;
-  text-align: center;
+  text-align: justified;
   font-size: 1.2rem;
   margin-bottom: 3rem;
 }
@@ -74,41 +76,45 @@ p {
 /* Terminal Window */
 .terminal-window {
   background-color: #d4d0c8;
-  padding: 0;
+  padding: 1px;
   margin: 1.5rem auto;
-  border: 2px outset #c0c0c0;
+  border: 2px outset #d3cfc6;
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
-  
-
+  border-top: 1px solid #eeeeee;      /* highlight on top */
+  border-left: 1px solid #eeeeee;     /* highlight on left */
+  border-right: 1px solid #525252;    /* shadow on right */
+  border-bottom: 1px solid #525252;   /* shadow on bottom */
+  box-shadow:
+    box-shadow:
+      inset 1px 1px 0 #404040,   
+      inset -1px -1px 0 #f7f6f5; 
+    }
   
 .terminal-window:hover {
   border: 16px outset #303030;
 }
 
 .terminal-header {
-  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);uuhvvkhyu
   color: #000000;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.5rem; c
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
   
-  border-bottom: 1px solid #808080
-  border-top: 2px solid #404049;      /* Shadow on top */
-  border-left: 2px solid #404049;     /* Shadow on left */
-  border-right: 2px solid #f7f6f5;    /* Highlight on right */
-  border-bottom: 2px solid #f7f6f5;   /* Highlight on bottom */
-
-  /* Optional: give it a slight inner inset feel */
-  box-shadow:
-    inset 1px 1px 0 #404049,   /* inner top-left shadow */
-    inset -1px -1px 0 #f7f6f5;
-}
+    box-shadow:
+      inset 1px 1px 0 #404049,   
+      inset -1px -1px 0 #f7f6f5; 
+  }
 
 .terminal-buttons {
   display: flex;
