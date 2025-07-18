@@ -1,4 +1,4 @@
-body {
+I body {
     background-color: #2a2a2a;
     color: #ffffff;
     font-family: 'Share Tech Mono', monospace;
@@ -162,13 +162,10 @@ p {
 .terminal-buttons {
     display: flex;
     align-items: center;
-}
-
-.terminal-button {
-    width: 16px;
-    height: 14px;
-    border: 1px outset #c0c0c0;
-    background-color: #c0c0c0;
+    width: 20px;
+    height: 20px;
+    border: 1px outset #959796;
+    background-color: #D3CFC7;
     font-size: 0.6rem;
     display: flex;
     align-items: center;
@@ -176,7 +173,7 @@ p {
     cursor: pointer;
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); /* down and right shadow */
+    box-shadow: 2px 2px 1px #404040; /* down and right shadow */
     margin-right: 0; /* default spacing is none */
 }
 
