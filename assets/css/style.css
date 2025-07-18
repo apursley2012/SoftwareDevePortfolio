@@ -23,7 +23,7 @@ main {
 }
 
 h1 {
-  font-family: 'Static',monospace;
+  font-family: 'Workbench',variable;
   font-size: 30px;
   color: #f0fff8;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
