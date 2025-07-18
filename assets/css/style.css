@@ -208,11 +208,21 @@ p {
     border: 1px inset #c0c0c0;
 }
 
+
+
 .terminal-button i {
-  font-size: 10px;         /* Adjust to fit the button size */
-  color: black;            /* Or any color you prefer */
-  line-height: 1;
+    /* Adjust to fit the button size */
+    font-size: 10px;
+    /* Or any color you prefer */      
+    color: black;            
+    line-height: 1;
+    /* vertical centering */
+    align-items: center; 
+    /* horizontal centering */
+    justify-content: center;  
+
 }
+
 
 /*
 
