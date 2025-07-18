@@ -213,10 +213,10 @@ margin-right: 2px; /* Slight space between each */
     .raised-element {
         margin-top: -20px; /* Raise it 20px above its normal spot */
         /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add soft shadow */
-        /*transition: all 0.3s ease-in-out; /* Smooth transition *//*
+        /*transition: all 0.3s ease-in-out; /* Smooth transition 
     }
 }
-
+*/
 .terminal-button:active {
     border: 10px outset #c0c0c0;
 }
@@ -232,7 +232,7 @@ margin-right: 2px; /* Slight space between each */
 .terminal-button.close::before {
     content: "X";
 }
-*/
+
 .terminal-content {
     background-color: #000000;
     color: #00ff00;
