@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    fint-family: 'Extrude', monospace;
+    font-family: 'Extrude', monospace;
     -webkit-text-stroke: 1.5px #000000;
     font-size: 2rem;
     line-height: 1.2;
