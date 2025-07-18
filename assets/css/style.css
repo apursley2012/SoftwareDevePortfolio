@@ -63,7 +63,7 @@ p {
     border-right-color: #404040;
      /* Increased outer box shadow (main raise) */
     box-shadow:
-    6px 6px 12px rgba(0, 0, 0, 0.5),   /* deep drop shadow */
+    1.5px 1.5px 6px rgba(0, 0, 0, 0.5),   
     0 0 10px rgba(0, 0, 0, 0.3);       /* soft glow around window */
 }
 
