@@ -6,14 +6,12 @@ title: Software Development ePortfolio
 # Welcome to My Software Development ePortfolio
 
 <div class="intro-text">
-This is my Software Development ePortfolio site. Here you will find the
-projects and enhancements I have created while working toward my CS
-bachelor's in Software Development.
+This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor's in Software Development.
 </div>
 
-<div class="terminal-window" onclick="openCodeReview()">
+<div class="terminal-window" onclick="openPage('code-review')">
     <div class="terminal-header">
-        <span class="terminal-title">Code Review</span>
+        <span>Code Review</span>
         <div class="terminal-buttons">
             <div class="terminal-button minimize"></div>
             <div class="terminal-button maximize"></div>
@@ -29,14 +27,14 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path, "r")
 >>> print(file.read())
 Opening file: code-review.md ...
-<span class="clickable-link">Click here to open Code Review</span></code>
+<span class="clickable-link">code-review.md</span></code>
     </div>
     <div class="status-bar">Ready</div>
 </div>
 
-<div class="terminal-window" onclick="openProjectArt()">
+<div class="terminal-window" onclick="openPage('artifacts')">
     <div class="terminal-header">
-        <span class="terminal-title">Project Artifacts</span>
+        <span>Artifacts</span>
         <div class="terminal-buttons">
             <div class="terminal-button minimize"></div>
             <div class="terminal-button maximize"></div>
@@ -44,60 +42,90 @@ Opening file: code-review.md ...
         </div>
     </div>
     <div class="terminal-content">
-        <code>apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ ls -la projects/
-total 48
-drwxr-xr-x 2 apursley2012 apursley2012 4096 Jul 16 10:30 .
-drwxr-xr-x 5 apursley2012 apursley2012 4096 Jul 16 10:28 ..
--rw-r--r-- 1 apursley2012 apursley2012 8192 Jul 16 10:30 enhancement1.md
--rw-r--r-- 1 apursley2012 apursley2012 8192 Jul 16 10:29 enhancement2.md
--rw-r--r-- 1 apursley2012 apursley2012 8192 Jul 16 10:28 enhancement3.md
->>> # Navigate to project artifacts
-<span class="clickable-link">Click here to open Project Artifacts</span></code>
+        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> # Open and read Artifacts page
+>>> path = r"Software-Dev-ePortfolio/artifacts.md"
+>>> file = open(path, "r")
+>>> print(file.read())
+Opening file: artifacts.md ...
+<span class="clickable-link">artifacts.md</span></code>
     </div>
-    <div class="status-bar">3 artifacts found</div>
+    <div class="status-bar">Ready</div>
 </div>
 
-<div class="markdown-content">
-## About This Portfolio
+<div class="terminal-window" onclick="openPage('narratives')">
+    <div class="terminal-header">
+        <span>Narratives</span>
+        <div class="terminal-buttons">
+            <div class="terminal-button minimize"></div>
+            <div class="terminal-button maximize"></div>
+            <div class="terminal-button close"></div>
+        </div>
+    </div>
+    <div class="terminal-content">
+        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> # Open and read Narratives page
+>>> path = r"Software-Dev-ePortfolio/narratives.md"
+>>> file = open(path, "r")
+>>> print(file.read())
+Opening file: narratives.md ...
+<span class="clickable-link">narratives.md</span></code>
+    </div>
+    <div class="status-bar">Ready</div>
+</div>
 
-This ePortfolio showcases my journey through software development during my Computer Science bachelor's program. Each section demonstrates different aspects of my technical skills and growth as a developer.
+<div class="terminal-window" onclick="openPage('professional-self-assessment')">
+    <div class="terminal-header">
+        <span>Professional Self-Assessment</span>
+        <div class="terminal-buttons">
+            <div class="terminal-button minimize"></div>
+            <div class="terminal-button maximize"></div>
+            <div class="terminal-button close"></div>
+        </div>
+    </div>
+    <div class="terminal-content">
+        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> # Open and read Professional Self-Assessment page
+>>> path = r"Software-Dev-ePortfolio/professional-self-assessment.md"
+>>> file = open(path, "r")
+>>> print(file.read())
+Opening file: professional-self-assessment.md ...
+<span class="clickable-link">professional-self-assessment.md</span></code>
+    </div>
+    <div class="status-bar">Ready</div>
+</div>
 
-### Navigation
-
-- **Code Review:** Analysis and reflection on my development process
-- **Project Artifacts:** Three major enhancements showcasing different technical skills
-- **Professional Assessment:** Self-evaluation and career objectives
-
-### Technical Skills Demonstrated
-
-- Software engineering and design principles
-- Algorithm development and data structures
-- Database management and optimization
-- Security-focused development practices
-- Version control and collaborative development
+<div class="terminal-window" onclick="openPage('contact')">
+    <div class="terminal-header">
+        <span>Contact</span>
+        <div class="terminal-buttons">
+            <div class="terminal-button minimize"></div>
+            <div class="terminal-button maximize"></div>
+            <div class="terminal-button close"></div>
+        </div>
+    </div>
+    <div class="terminal-content">
+        <code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> # Open and read Contact page
+>>> path = r"Software-Dev-ePortfolio/contact.md"
+>>> file = open(path, "r")
+>>> print(file.read())
+Opening file: contact.md ...
+<span class="clickable-link">contact.md</span></code>
+    </div>
+    <div class="status-bar">Ready</div>
 </div>
 
 <script>
-function openCodeReview() {
-    // Replace with actual code review page URL
-    window.location.href = 'code-review.html';
+function openPage(pageName) {
+    window.location.href = pageName + '.html';
 }
-
-function openProjectArt() {
-    // Replace with actual project artifacts page URL
-    window.location.href = 'projects.html';
-}
-
-// Add hover effects for terminal windows
-document.addEventListener('DOMContentLoaded', function() {
-    const terminalWindows = document.querySelectorAll('.terminal-window');
-    terminalWindows.forEach(window => {
-        window.addEventListener('mouseenter', function() {
-            this.style.border = '2px outset #d0d0d0';
-        });
-        window.addEventListener('mouseleave', function() {
-            this.style.border = '2px outset #c0c0c0';
-        });
-    });
-});
 </script>
