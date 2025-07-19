@@ -23,7 +23,8 @@ main {
 }
 
 h1 {
-  font-family: 'Rubik Glitch', 'Press Start 2P', 'Silkscreen', static;
+  font-family: 'Rampart One', 'Press Start 2P', 'Silkscreen', 'Tourney', static, variable;
+  
   font-size: 30px;
   color: #ccff00;
   text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
