@@ -89,12 +89,12 @@ p {
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
   border-top: 1px solid #525252;     /* highlight on top */
-  border-left: 1px solid #eeeeee;     /* highlight on left */
+  border-left: 1px solid #525252;     /* highlight on left */
   border-right: 1px solid #eeeeee;    /* shadow on right */
-  border-bottom: 1px solid #525252;  /* shadow on bottom */
+  border-bottom: 1px solid #eeeeee;  /* shadow on bottom */
   box-shadow:
-      inset 1px 1px 0 #404040,   
-      inset -1px -1px 0 #f7f6f5; 
+      inset 1.5px 1.5px 0 #404040,   
+      inset -1.5px -1.5px 0 #f7f6f5; 
     }
   
 .terminal-window:hover {
