@@ -1,4 +1,4 @@
-@font-face {
+@font-face {l
   font-family: 'Extrude';
   src: url('/assets/fonts/Extrude.ttf') format('truetype');
   font-weight: normal;
@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #36454F;
+  background-color: #123456;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
   margin: 0;
@@ -49,7 +49,7 @@ h1 {
 }
 */
 h2 {
-  font-family: 'Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
+  font-family: 'Share Tech Mono', Extrude','Tourney','Static','SixtyFour', 'Audiowide','Press Start 2P', monospace;
   color: #f0fff8;
   text-shadow: 0 0 3px #80ffc0, 0 0 10px #66cc00, 0 0 20px #66cc00, 0 0 30px #66cc00;
   text-align: center;
@@ -88,10 +88,10 @@ p {
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
-  border-top: 1px solid #eeeeee;      /* highlight on top */
+  border-top: 1px solid #525252;     /* highlight on top */
   border-left: 1px solid #eeeeee;     /* highlight on left */
-  border-right: 1px solid #525252;    /* shadow on right */
-  border-bottom: 1px solid #525252;   /* shadow on bottom */
+  border-right: 1px solid #eeeeee;    /* shadow on right */
+  border-bottom: 1px solid #525252;  /* shadow on bottom */
   box-shadow:
       inset 1px 1px 0 #404040,   
       inset -1px -1px 0 #f7f6f5; 
@@ -111,10 +111,10 @@ p {
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
-    border-top: 2px solid #404040;
+    border-top: 2px solid #fefefe;
     border-left: 2px solid #404040;
-    border-right: 2px solid #fefefe;
-    border-bottom: 2px solid #fefefe;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
   
     box-shadow:
       inset 1px 1px 0 #404049,   
@@ -139,6 +139,55 @@ p {
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
 }
+
+/* Windows 2000 Terminal Window Styling */
+.terminal-window {
+    /* background-color: #c0c0c0;
+    padding: 0;
+    margin: 1.5rem auto;
+    border: 2px outset #c0c0c0;
+    max-width: 900px;
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-window:hover {
+    border: 2px outset #d0d0d0;
+}
+
+.terminal-header {
+    background: linear-gradient(to right, #808080, #c0c0c0);
+    color: #000000;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    border-bottom: 1px solid #808080;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.terminal-button {
+    width: 20px;
+    height: 20px;
+    border: 1px outset #c0c0c0;
+    background-color: #c0c0c0;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+}
+*/
 
 .terminal-button:active {
   border: 1px inset #c0c0c0;
