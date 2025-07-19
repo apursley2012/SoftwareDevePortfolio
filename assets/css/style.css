@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #36454f;
+  background-color: #353839;
   color: #ffffff;
   font-family: 'Share Tech Mono', monospace;
   margin: 0;
@@ -81,10 +81,10 @@ p {
 
 /* Terminal Window */
 .terminal-window {
-  background-color: #d4d0c8;
+  background-color: #000000;
   padding: 1px;
   margin: 1.5rem auto;
-  border: 2px outset #d3cfc6;
+  border: 2px outset #d8d9da;
   max-width: 900px;
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
