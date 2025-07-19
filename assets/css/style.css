@@ -23,21 +23,18 @@ main {
 }
 
 h1 {
-  font-family: 'Rampart One', 'Press Start 2P', 'Silkscreen', 'Tourney', static, variable;
-  
+  font-family: 'Tourney', 'Rampart One', 'Press Start 2P', 'Silkscreen', static, variable;
   font-size: 30px;
   color: #ccff00;
-  text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
+  text-shadow: /* 0 0 15px #ccff00, 0 0 25px #ccff00; */
   text-shadow:
-    0 0 5px #00ff00,      /* green glow */
-    0 0 10px #00ff00,     /* stronger green glow */
-    1px 1px 0 #000000,    /* black shadow bottom-right */
-    -1px -1px 0 #404040,  /* dark grey shadow top-left */
-    0 0 2px #ffffff;  
-    margin-bottom: 1.5rem;
-  text-align: center;
+  0 0 2.5px #00ff00,         /* green glow */
+  0 0 5px #00ff00,           /* stronger green glow */
+  1px 1px 7.5px #000000,     /* black shadow bottom-right */
+  -1px -1px 2.5px #404040,   /* dark grey shadow top-left */
+  0 0 2px #ffffff;
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: center; 
 }
 /*
 .glow-text {
@@ -96,7 +93,6 @@ p {
   border-right: 1px solid #525252;    /* shadow on right */
   border-bottom: 1px solid #525252;   /* shadow on bottom */
   box-shadow:
-    box-shadow:
       inset 1px 1px 0 #404040,   
       inset -1px -1px 0 #f7f6f5; 
     }
@@ -106,9 +102,9 @@ p {
 }
 
 .terminal-header {
-  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);uuhvvkhyu
+  background: linear-gradient(to right, #808080, #909090, #a0a0a0, #b0b0b0, #c0c0c0);
   color: #000000;
-  padding: 0.25rem 0.5rem; c
+  padding: 0.25rem 0.5rem; 
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
@@ -170,8 +166,8 @@ p {
   min-height: 150px;
   */
   
-.terminal-content, .
-  terminal-content code {
+.terminal-content, 
+.terminal-content code {
   display: block;
   color: #33ff00;
   background: #000000;
