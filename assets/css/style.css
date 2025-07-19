@@ -28,6 +28,12 @@ h1 {
   font-size: 30px;
   color: #ccff00;
   text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
+  text-shadow:
+    0 0 5px #00ff00,      /* green glow */
+    0 0 10px #00ff00,     /* stronger green glow */
+    1px 1px 0 #000000,    /* black shadow bottom-right */
+    -1px -1px 0 #404040,  /* dark grey shadow top-left */
+    0 0 2px #ffffff;  
     margin-bottom: 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
